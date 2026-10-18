@@ -1,0 +1,41 @@
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary files and logs
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Common language and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Generated and potentially sensitive datasets; explicitly add reviewed files
+# only when they are appropriate to publish.
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Common large model artifacts
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
